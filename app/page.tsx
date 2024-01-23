@@ -1,7 +1,12 @@
-export default function Home() {
+import AboutSection from "@/components/ui/about-section";
+import ProfileSection from "@/components/ui/profile-section";
+
+const HomePage = () => {
   return (
-    <main>
-      Hello
-    </main>
+    <div className="min-h-screen flex flex-col">
+      <ProfileSection />
+      <AboutSection />
+    </div>
   )
 }
+export default HomePage;
