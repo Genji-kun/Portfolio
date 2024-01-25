@@ -52,7 +52,7 @@ const Profile = () => {
                 variants={sideInRightVariants}
                 initial="initial"
                 animate="animate"
-                className="uppercase font-bold absolute text-9xl fill-none -z-10 top-[15%] left-32" style={{ color: 'transparent', WebkitTextStroke: '2px #E4E4E7' }}>
+                className="uppercase font-bold absolute text-8xl fill-none -z-10 top-[15%] left-32" style={{ color: 'transparent', WebkitTextStroke: '2px #E4E4E7' }}>
                 Frontend Dev
             </motion.h4>
             <div className="h-[90vh] grid grid-cols-2 items-center py-10 container">
@@ -65,7 +65,7 @@ const Profile = () => {
                         initial="initial"
                         animate="animate"
                         className="flex flex-col gap-6 overflow-hidden">
-                        <p className="text-[2.75rem] font-bold leading-tight">Improve views with custom style & functionalities, highly-converting website</p>
+                        <p className="text-4xl font-bold leading-tight">Improve views with custom style & functionalities, highly-converting website</p>
                         <p className="text-2xl">that are appealing, dynamic devices & user-friendly.</p>
                     </motion.div>
                     <motion.div variants={buttonsVariants}
@@ -86,7 +86,7 @@ const Profile = () => {
                 variants={sideInLeftVariants}
                 initial="initial"
                 animate="animate"
-                className="uppercase font-bold absolute text-9xl fill-none -z-20 bottom-[15%] right-32" style={{ color: 'transparent', WebkitTextStroke: '2px #E4E4E7' }}>
+                className="uppercase font-bold absolute text-8xl fill-none -z-20 bottom-[15%] right-32" style={{ color: 'transparent', WebkitTextStroke: '2px #E4E4E7' }}>
                 UI / UX design
             </motion.h4>
             <MyStatus isFinding={true} />
@@ -94,7 +94,6 @@ const Profile = () => {
                 <span>Scroll Down</span>
                 <motion.div className="absolute bottom-0 right-0 h-[2px] w-full bg-primary"
                     variants={runnerVariants} initial="initial" animate="animate">
-                    {/* content here */}
                 </motion.div>
             </div>
         </motion.section >
