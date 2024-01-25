@@ -1,10 +1,10 @@
 "use client"
 
-import { useScroll, useTransform, motion, useInView } from 'framer-motion';
-import React, { useEffect, useRef, useState } from 'react';
+import { useScroll, useTransform, motion } from 'framer-motion';
+import React, { useRef } from 'react';
 import MyProjectsText from './my-projects-text';
-import { is } from '@react-three/fiber/dist/declarations/src/core/utils';
 import AboutMeText from './about-me-text';
+import AboutMe from './about-me';
 
 const Projects = () => {
     const targetRef = useRef(null);
@@ -19,8 +19,7 @@ const Projects = () => {
             <div className="sticky top-0 flex h-screen items-center overflow-hidden">
                 <motion.div style={{ x }} className="flex gap-4">
                     <AboutMeText />
-                    <div className="w-screen h-screen bg-background">
-                    </div>
+                    <AboutMe />
                     <MyProjectsText />
                     <div className="w-screen h-screen bg-background">
                     </div>

@@ -11,7 +11,7 @@ const SVGMorph = () => {
     }
 
     return (
-        <motion.svg variants={imageVariants} initial="initial" animate="animate" className="w-fit h-fit xl:w-[30rem] xl:h-[30rem] p-10 xl:p-0" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <motion.svg variants={imageVariants} initial="initial" animate="animate" className="w-fit h-fit xl:w-[30rem] xl:h-[30rem] p-5 xl:p-0" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <defs>
                 <pattern id="image" x="0" y="0" height="100%" width="100%" viewBox="0 0 1 1">
                     <image className="object-cover" x="0" y="0" width="1" height="1" xlinkHref={"https://res.cloudinary.com/dzba4fewa/image/upload/v1697418342/bqiphv8ijowcb1ao2w8f.jpg"}></image>

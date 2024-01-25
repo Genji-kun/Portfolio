@@ -54,11 +54,8 @@ const Profile = () => {
                 className="uppercase font-bold absolute text-8xl text-nowrap fill-none -z-10 top-[15%] -left-[22rem] xl:left-32" style={{ color: 'transparent', WebkitTextStroke: '2px rgba(228,228,231,  0.75)' }}>
                 Frontend Dev
             </motion.h4>
-            <div className="h-[80vh] xl:h-[90vh] grid grid-cols-1 xl:grid-cols-2 items-center py-10 xl:container">
-                <div className="flex xl:hidden justify-center items-center">
-                    <SVGMorph />
-                </div>
-                <div className="flex flex-col gap-2 lg:gap-4 xl:gap-6 -translate-y-6 xl:translate-y-0 xl:mt-6 ">
+            <div className="h-[80vh] xl:h-[90vh] justify-center flex flex-col-reverse xl:flex-row items-center py-10 xl:container">
+                <div className="w-full xl:w-1/2 flex flex-col gap-2 lg:gap-4 xl:gap-6 xl:mt-6 ">
                     <h2 className="text-sm md:text-lg lg:text-xl xl:text-2xl overflow-hidden flex gap-x-1">Hello there, I&apos;m
                         <NameTransition />
                     </h2>
@@ -78,7 +75,7 @@ const Profile = () => {
                         <Button variant={"outline"} className="p-4 xl:p-6 text-xs xl:text-base font-semibold border-primary">My working experience</Button>
                     </motion.div>
                 </div>
-                <div className="hidden xl:flex justify-center items-center">
+                <div className="w-full xl:w-1/2 xl:flex justify-center items-center">
                     <SVGMorph />
                 </div>
             </div >
@@ -90,7 +87,7 @@ const Profile = () => {
                 UI / UX design
             </motion.h4>
             <MyStatus isFinding={true} />
-            <div className="absolute bottom-12 -left-16 xl:left-0 border-b border-border py-2 pr-2 pl-12 -rotate-90 overflow-hidden">
+            <div className="absolute bottom-12 -left-[3.5rem] xl:left-0 border-b border-border py-1 xl:py-2 pr-0 xl:pr-2 pl-12 -rotate-90 overflow-hidden">
                 <span>Scroll Down</span>
                 <motion.div className="absolute bottom-0 right-0 h-[2px] w-full bg-primary"
                     variants={runnerVariants} initial="initial" animate="animate">
