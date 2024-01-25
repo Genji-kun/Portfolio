@@ -77,9 +77,7 @@ const Profile = () => {
                     </motion.div>
                 </div>
                 <div className="flex justify-center items-center">
-                    {/* <svg width="393" height="377" viewBox="0 0 393 377" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <SVGMorph paths={[shapeOne, shapeTwo, shapeThree, shapeOne]} />
-                    </svg> */}
+                    <SVGMorph />
                 </div>
             </div>
             <motion.h4
