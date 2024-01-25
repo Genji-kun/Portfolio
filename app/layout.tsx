@@ -1,6 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/ui/navbar'
+import { Poppins } from 'next/font/google'
+import { cn } from '@/lib/utils'
+
+const poppins = Poppins({ weight: ['100', '200', '300', '400', '500', '600', '700'], subsets: ['latin'] })
+
 
 export const metadata: Metadata = {
   title: 'Vo Phu Phat | My Portfolio',
@@ -14,12 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-beauSans flex flex-col bg-background">
-        <Navbar />
+      <body className={cn("flex flex-col bg-background", poppins.className)}>
+        < Navbar />
         <main>
           {children}
         </main>
       </body>
-    </html>
+    </html >
   )
 }

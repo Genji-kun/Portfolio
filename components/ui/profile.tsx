@@ -4,8 +4,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import MyStatus from './my-status';
 import { Button } from './button';
+import { shapeOne, shapeThree, shapeTwo } from '@/utils/shapePaths';
+import SVGMorph from './SVGMorph';
+import NameTransition from './name-transition';
 
-const ProfileSection = () => {
+const Profile = () => {
 
 
     const fadeInVariants = {
@@ -23,10 +26,21 @@ const ProfileSection = () => {
         animate: { x: 0, opacity: 1, transition: { duration: 0.75, delay: 0.75 } }
     };
 
+    const textSlideVariants = {
+        initial: { y: 100, opacity: 0 },
+        animate: { y: 0, opacity: 1, transition: { duration: 0.25, delay: 0.75 } }
+    };
+
+    const buttonsVariants = {
+        initial: { y: 40, opacity: 0 },
+        animate: { y: 0, opacity: 1, transition: { duration: 0.25, delay: 1 } }
+    };
+
     const runnerVariants = {
         initial: { x: '100%' },
         animate: { x: '-100%', transition: { duration: 2, repeat: Infinity } }
     }
+
 
     return (
         <motion.section
@@ -38,25 +52,41 @@ const ProfileSection = () => {
                 variants={sideInRightVariants}
                 initial="initial"
                 animate="animate"
-                className="uppercase font-bold absolute text-9xl fill-none -z-10 top-[15%] left-32" style={{ color: 'transparent', WebkitTextStroke: '1px #E4E4E7' }}>
+                className="uppercase font-bold absolute text-9xl fill-none -z-10 top-[15%] left-32" style={{ color: 'transparent', WebkitTextStroke: '2px #E4E4E7' }}>
                 Frontend Dev
             </motion.h4>
             <div className="h-[90vh] grid grid-cols-2 items-center py-10 container">
                 <div className="flex flex-col gap-6 mt-6">
-                    <h2 className="text-2xl">Hello there, I&apos;m <span className="font-bold">Vo Phu Phat</span></h2>
-                    <p className="text-5xl font-bold font-zonaPro">Improve views with custom style & functionalities, highly-converting website</p>
-                    <p className="text-2xl">that are appealing, dynamic devices & user-friendly</p>
-                    <div className="w-full grid grid-cols-2 gap-4">
+                    <h2 className="text-2xl overflow-hidden flex gap-x-1">Hello there, I&apos;m
+                        <NameTransition />
+                    </h2>
+                    <motion.div
+                        variants={textSlideVariants}
+                        initial="initial"
+                        animate="animate"
+                        className="flex flex-col gap-6 overflow-hidden">
+                        <p className="text-[2.75rem] font-bold leading-tight">Improve views with custom style & functionalities, highly-converting website</p>
+                        <p className="text-2xl">that are appealing, dynamic devices & user-friendly.</p>
+                    </motion.div>
+                    <motion.div variants={buttonsVariants}
+                        initial="initial"
+                        animate="animate"
+                        className="w-full grid grid-cols-2 gap-4">
                         <Button className="p-6 text-base font-semibold">View my projects</Button>
                         <Button variant={"outline"} className="p-6 text-base font-semibold border-primary">My working experience</Button>
-                    </div>
+                    </motion.div>
+                </div>
+                <div className="flex justify-center items-center">
+                    {/* <svg width="393" height="377" viewBox="0 0 393 377" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <SVGMorph paths={[shapeOne, shapeTwo, shapeThree, shapeOne]} />
+                    </svg> */}
                 </div>
             </div>
             <motion.h4
                 variants={sideInLeftVariants}
                 initial="initial"
                 animate="animate"
-                className="uppercase font-bold absolute text-9xl fill-none -z-10 bottom-[15%] right-32" style={{ color: 'transparent', WebkitTextStroke: '1px #E4E4E7' }}>
+                className="uppercase font-bold absolute text-9xl fill-none -z-20 bottom-[15%] right-32" style={{ color: 'transparent', WebkitTextStroke: '2px #E4E4E7' }}>
                 UI / UX design
             </motion.h4>
             <MyStatus isFinding={true} />
@@ -71,4 +101,4 @@ const ProfileSection = () => {
     );
 };
 
-export default ProfileSection;
+export default Profile;

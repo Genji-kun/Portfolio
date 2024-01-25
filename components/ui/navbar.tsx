@@ -18,7 +18,7 @@ const Navbar = () => {
             variants={fadeInVariants}
             initial="initial"
             animate="animate"
-            className="w-full h-[80px] flex items-center justify-between container absolute top-0 inset-x-0">
+            className="w-full h-[80px] flex items-center justify-between container absolute top-0 inset-x-0 z-10">
             <NavbarLogo />
             <div className="flex items-center gap-4">
                 <NavbarRoutes />
