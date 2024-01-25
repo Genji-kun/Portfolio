@@ -52,7 +52,7 @@ const Profile = () => {
                 variants={sideInRightVariants}
                 initial="initial"
                 animate="animate"
-                className="uppercase font-bold absolute text-8xl fill-none -z-10 top-[15%] left-32" style={{ color: 'transparent', WebkitTextStroke: '2px #E4E4E7' }}>
+                className="uppercase font-bold absolute text-8xl fill-none -z-10 top-[15%] left-32" style={{ color: 'transparent', WebkitTextStroke: '2px rgba(228,228,231,  0.75)' }}>
                 Frontend Dev
             </motion.h4>
             <div className="h-[90vh] grid grid-cols-2 items-center py-10 container">
@@ -84,7 +84,7 @@ const Profile = () => {
                 variants={sideInLeftVariants}
                 initial="initial"
                 animate="animate"
-                className="uppercase font-bold absolute text-8xl fill-none -z-20 bottom-[15%] right-32" style={{ color: 'transparent', WebkitTextStroke: '2px #E4E4E7' }}>
+                className="uppercase font-bold absolute text-8xl fill-none -z-20 bottom-[15%] right-32" style={{ color: 'transparent', WebkitTextStroke: '2px rgba(228,228,231, 0.75)' }}>
                 UI / UX design
             </motion.h4>
             <MyStatus isFinding={true} />

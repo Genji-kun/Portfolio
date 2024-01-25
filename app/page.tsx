@@ -5,8 +5,8 @@ const HomePage = () => {
   return (
 
     <div className="min-h-screen flex flex-col ">
-      <div className="absolute inset-0 h-screen z-10 overflow-x-hidden">
-        <svg aria-hidden="true" className="-z-10 absolute top-[35vh] -left-[0vh] scale-[1.5] right-0 w-1/3 h-1/3 blur-3xl" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <div className="absolute inset-0 h-screen z-10 overflow-hidden">
+        <svg aria-hidden="true" className="-z-10 absolute top-[70vh] -left-[0vh] scale-[1.5] right-0 w-1/3 h-1/3 blur-3xl" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <path className="fill-[#f7f6ff]" d="M32.9,-31.6C47,-27.3,65.8,-21.1,72,-9.3C78.1,2.5,71.5,20,60.3,30.4C49.1,40.9,33.2,44.3,18.8,47.9C4.4,51.5,-8.6,55.3,-25.3,55.4C-42,55.4,-62.4,51.6,-71.8,39.4C-81.2,27.3,-79.6,6.8,-75.6,-12.9C-71.6,-32.6,-65.3,-51.5,-52.3,-56C-39.4,-60.4,-19.7,-50.5,-5.1,-44.4C9.4,-38.3,18.8,-35.9,32.9,-31.6Z" transform="translate(100 100)" />
         </svg>
         <svg aria-hidden="true" className="-z-10 absolute -top-[20vh] -right-[5vh] w-1/4 h-1/4 scale-[2] blur-3xl" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">

@@ -1,10 +1,23 @@
+"use client";
 
 import React from 'react';
+import { motion } from "framer-motion";
 
 const SVGMorph = () => {
+
+    const imageVariants = {
+        initial: { opacity: 0 },
+        animate: { opacity: 1, transition: { delay: 1, duration: 0.5 } }
+    }
+
     return (
-        <svg className="w-[30rem] h-[30rem]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <path className="fill-border stroke-primary stroke-1" transform="translate(100 100)" >
+        <motion.svg variants={imageVariants} initial="initial" animate="animate" className="w-[30rem] h-[30rem]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="image" x="0" y="0" height="100%" width="100%" viewBox="0 0 1 1">
+                    <image x="0" y="0" width="1" height="1" xlinkHref={"https://res.cloudinary.com/dzba4fewa/image/upload/v1697418342/bqiphv8ijowcb1ao2w8f.jpg"}></image>
+                </pattern>
+            </defs>
+            <path fill="url(#image)" className=" stroke-primary stroke-1 relative overflow-hidden" transform="translate(100 100)" >
                 <animate attributeName='d' dur={"10000ms"} repeatCount={"indefinite"}
                     values='M44.8,-67.5C56.8,-62.1,64.3,-47.4,67.3,-33C70.3,-18.6,68.9,-4.5,67.9,10.5C67,25.5,66.5,41.4,59.1,53.1C51.8,64.7,37.6,72.3,22.5,76.9C7.3,81.6,-8.8,83.2,-23.3,79.1C-37.8,74.9,-50.6,65,-61.5,53C-72.4,41,-81.4,27,-80.9,13.2C-80.5,-0.6,-70.6,-14.2,-63.6,-28.8C-56.5,-43.4,-52.2,-59,-42.1,-65.2C-32,-71.4,-16,-68.3,0.2,-68.7C16.4,-69,32.9,-72.9,44.8,-67.5Z;
                                 M50.1,-76.2C64.6,-68.7,75.6,-54.1,80.2,-38.3C84.9,-22.4,83.3,-5.3,76.8,8.1C70.3,21.6,58.9,31.4,49.6,43.8C40.2,56.3,32.8,71.4,20.6,79.1C8.4,86.8,-8.6,87,-25.1,83.2C-41.7,79.5,-57.7,71.7,-66.3,59C-74.9,46.3,-76,28.7,-76.8,12C-77.6,-4.6,-78.2,-20.3,-73.4,-34.7C-68.7,-49.1,-58.6,-62.3,-45.5,-70.4C-32.3,-78.5,-16.2,-81.5,0.8,-82.8C17.9,-84.1,35.7,-83.7,50.1,-76.2Z;
@@ -16,7 +29,8 @@ const SVGMorph = () => {
                                 M44.8,-67.5C56.8,-62.1,64.3,-47.4,67.3,-33C70.3,-18.6,68.9,-4.5,67.9,10.5C67,25.5,66.5,41.4,59.1,53.1C51.8,64.7,37.6,72.3,22.5,76.9C7.3,81.6,-8.8,83.2,-23.3,79.1C-37.8,74.9,-50.6,65,-61.5,53C-72.4,41,-81.4,27,-80.9,13.2C-80.5,-0.6,-70.6,-14.2,-63.6,-28.8C-56.5,-43.4,-52.2,-59,-42.1,-65.2C-32,-71.4,-16,-68.3,0.2,-68.7C16.4,-69,32.9,-72.9,44.8,-67.5Z'>
                 </animate>
             </path>
-        </svg>);
+        </motion.svg>
+    );
 };
 
 export default SVGMorph;
