@@ -3,7 +3,9 @@ import { Tag } from "./Tag";
 
 export interface Project {
     name: string,
-    description: string,
+    description: string[],
     images: Image[]
-    tags: Tag[]
+    tags: Tag[],
+    link: string,
+    liveDemo?: string
 }

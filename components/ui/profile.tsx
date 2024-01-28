@@ -51,7 +51,7 @@ const Profile = () => {
                 variants={sideInRightVariants}
                 initial="initial"
                 animate="animate"
-                className="uppercase font-bold absolute text-8xl text-nowrap fill-none -z-10 top-[15%] -left-[22rem] xl:left-32" style={{ color: 'transparent', WebkitTextStroke: '2px rgba(228,228,231,  0.75)' }}>
+                className="uppercase font-bold absolute text-xl xl:text-8xl text-nowrap fill-none -z-10 top-[15%] -left-10 xl:left-32 " style={{ color: 'transparent', WebkitTextStroke: '1px rgba(228,228,231, 1)' }}>
                 Frontend Dev
             </motion.h4>
             <div className="h-[80vh] xl:h-[90vh] justify-center flex flex-col-reverse xl:flex-row items-center py-10 xl:container">
@@ -75,19 +75,19 @@ const Profile = () => {
                         <Button variant={"outline"} className="p-4 xl:p-6 text-xs xl:text-base font-semibold border-primary">My working experience</Button>
                     </motion.div>
                 </div>
-                <div className="w-full xl:w-1/2 xl:flex justify-center items-center">
+                <div className="w-full md:w-1/2 flex justify-center items-center">
                     <SVGMorph />
                 </div>
             </div >
-            <motion.h4
+            <motion.div
                 variants={sideInLeftVariants}
                 initial="initial"
                 animate="animate"
-                className="uppercase font-bold absolute text-7xl xl:text-8xl text-nowrap fill-none -z-20 bottom-[15%] -right-40 xl:right-32 " style={{ color: 'transparent', WebkitTextStroke: '2px rgba(228,228,231, 0.75)' }}>
+                className="uppercase font-bold absolute text-xl xl:text-8xl text-nowrap fill-none -z-20 bottom-[50%] xl:bottom-[15%] -right-10 xl:right-32" style={{ color: 'transparent', WebkitTextStroke: '1px rgba(228,228,231, 1)' }}>
                 UI / UX design
-            </motion.h4>
+            </motion.div>
             <MyStatus isFinding={true} />
-            <div className="absolute bottom-12 -left-[3.5rem] xl:left-0 border-b border-border py-1 xl:py-2 pr-0 xl:pr-2 pl-12 -rotate-90 overflow-hidden">
+            <div className="hidden xl:block absolute bottom-12 -left-[3.5rem] xl:left-0 border-b border-border py-1 xl:py-2 pr-0 xl:pr-2 pl-12 -rotate-90 overflow-hidden">
                 <span>Scroll Down</span>
                 <motion.div className="absolute bottom-0 right-0 h-[2px] w-full bg-primary"
                     variants={runnerVariants} initial="initial" animate="animate">
