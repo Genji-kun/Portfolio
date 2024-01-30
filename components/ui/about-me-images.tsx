@@ -23,7 +23,7 @@ const AboutMeImages = () => {
                 <CarouselContent>
                     {aboutMeImages.map((image, index) => (
                         <CarouselItem key={index} className="w-full">
-                            <Image src={image} alt="image" className="aspect-video w-full object-cover rounded-lg" />
+                            <Image src={image} alt="image" className="aspect-square xl:aspect-video w-full object-cover rounded-lg" />
                         </CarouselItem>
                     ))}
                 </CarouselContent>

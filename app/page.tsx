@@ -1,8 +1,5 @@
-import AboutMe from "@/components/ui/about-me";
 import HorizontalRevserseSlider from "@/components/ui/horizontal-reverse-slider";
 import HorizontalSlider from "@/components/ui/horizontal-slider";
-import MySkills from "@/components/ui/my-skills";
-import MyStudies from "@/components/ui/my-studies";
 import Profile from "@/components/ui/profile";
 import Projects from "@/components/ui/projects";
 

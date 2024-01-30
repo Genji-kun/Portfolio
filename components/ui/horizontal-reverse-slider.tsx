@@ -25,11 +25,11 @@ const HorizontalRevserseSlider = () => {
             <div className="sticky top-0 flex h-screen items-center overflow-hidden">
                 <motion.div style={{ x }} className="flex gap-4">
                     <MyProjectsText />
-                    <div className="z-10 w-[100vw] h-screen bg-background p-10 relative">
+                    <div className="z-10 w-screen h-screen overflow-hidden bg-background p-4 xl:p-10 relative">
                         <ShapeDecoration />
                         <div>
-                            <h1 className="text-4xl font-bold mb-2">My Projects</h1>
-                            <h1 className="text-xl">Know about my studies and work experiences.</h1>
+                            <h1 className="text-xl xl:text-4xl font-bold mb-2">My Projects</h1>
+                            <h1 className="text-sm xl:text-xl">Know about my studies and work experiences.</h1>
                         </div>
                         <ProjectItem project={myProjects[0]} />
                     </div>

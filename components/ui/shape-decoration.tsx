@@ -16,7 +16,7 @@ const ShapeDecoration = () => {
     }
 
     return (
-        <div className="w-fit h-fit absolute -top-10 -right-10 flex gap-10">
+        <div className="w-fit h-fit absolute -top-10 -right-10 xl:flex gap-10 hidden">
             <div className="w-36 h-36 rounded-lg relative flex justify-center items-center overflow-hidden">
                 <motion.div
                     variants={infinityRotate}
