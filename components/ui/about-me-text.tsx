@@ -32,6 +32,7 @@ const AboutMeText = () => {
 
         <motion.div
             ref={textRef}
+            id="about"
             className="justify-center items-center text-background flex w-screen h-[80vh] translate-y-[10vh] p-10 xl:p-0">
             {showText ? <>
                 <motion.svg fill="white" variants={fillVariants} initial="initial" animate="animate" width="637" height="96" viewBox="0 0 637 96" xmlns="http://www.w3.org/2000/svg">

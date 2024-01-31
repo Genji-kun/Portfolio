@@ -6,6 +6,7 @@ import NavbarLogo from './navbar-logo';
 import { Button } from './button';
 import NavbarRoutes from './navbar-routes';
 import NavbarMenu from './navbar-menu';
+import Link from 'next/link';
 
 const Navbar = () => {
 
@@ -23,12 +24,14 @@ const Navbar = () => {
             <NavbarLogo />
             <div className="hidden xl:flex items-center gap-4">
                 <NavbarRoutes />
-                <Button className="px-4">
-                    <span className="font-semibold">Contact Me</span>
-                </Button>
+                <a href="/VoPhuPhat_Resume.pdf" download>
+                    <Button className="px-4">
+                        <span className="font-semibold">My Resume</span>
+                    </Button>
+                </a>
             </div>
             <NavbarMenu />
-        </motion.div>
+        </motion.div >
     );
 };
 

@@ -2,6 +2,8 @@ import { Project } from "@/interfaces/Project";
 import openUnited from "@/public/OpenUnited.png";
 import law1 from "@/public/law_1.png";
 import law2 from "@/public/law_2.png";
+import oupia1 from "@/public/oupiaFirst_1.png";
+import oupia2 from "@/public/oupiaFirst_2.png";
 import oupiaCur1 from "@/public/oupia_cur_1.png";
 import oupiaCur2 from "@/public/oupia_cur_2.png";
 import portfolio1 from "@/public/portfolio_1.png";
@@ -19,7 +21,7 @@ export const myProjects: Project[] = [
     }, {
         name: "Oupia - The First Version",
         description: ["The platform allows users find the place to rent or upload the post."],
-        images: [{ url: openUnited }],
+        images: [{ url: oupia1 }, { url: oupia2 }],
         tags: [{ name: "React" }, { name: "TailwindCSS" }, { name: "Flowbite" }, { name: "Axios" }, { name: "SpringMVC" }, { name: "Firebase" }, { name: "SASS" }],
         link: "https://github.com/NganBao0206/Oupia"
     }, {

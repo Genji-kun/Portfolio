@@ -8,9 +8,6 @@ export const navbarRoutes: RouteType[] = [
         name: "About",
         href: "/#about"
     }, {
-        name: "Experience",
-        href: "/#experience"
-    }, {
         name: "Projects",
         href: "/#projects"
     }

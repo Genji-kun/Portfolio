@@ -10,6 +10,22 @@ import NameTransition from './name-transition';
 const Profile = () => {
 
 
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+                inline: 'nearest'
+            });
+        }
+    };
+
+    const handleClick = (e: any) => {
+        scrollToSection("projects");
+    };
+
+
     const fadeInVariants = {
         initial: { y: 40, opacity: 0 },
         animate: { y: 0, opacity: 1, transition: { duration: 0.75 } }
@@ -71,7 +87,9 @@ const Profile = () => {
                         initial="initial"
                         animate="animate"
                         className="w-full grid grid-cols-2 gap-4">
-                        <Button className="p-4 xl:p-6 text-xs xl:text-base font-semibold">View my projects</Button>
+                        <a href="#projects" onClick={handleClick} className="w-full">
+                            <Button className="p-4 xl:p-6 text-xs xl:text-base font-semibold w-full">View my projects</Button>
+                        </a>
                         <Button variant={"outline"} className="p-4 xl:p-6 text-xs xl:text-base font-semibold border-primary">My working experience</Button>
                     </motion.div>
                 </div>

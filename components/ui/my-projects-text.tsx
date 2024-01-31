@@ -30,6 +30,7 @@ const MyProjectsText = () => {
 
         <motion.div
             ref={textRef}
+            id="projects"
             className=" justify-center items-center text-background flex w-screen h-[80vh] translate-y-[10vh] p-10 xl:p-0">
             {showText ? <>
                 <motion.svg variants={fillVariants} initial="initial" animate="animate" width="857" height="96" viewBox="0 0 857 96" fill="white" xmlns="http://www.w3.org/2000/svg">
