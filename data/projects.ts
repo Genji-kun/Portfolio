@@ -20,7 +20,7 @@ export const myProjects: Project[] = [
         link: "https://github.com/Genji-kun/OpenUnited"
     }, {
         name: "Oupia - The First Version",
-        description: ["The platform allows users find the place to rent or upload the post."],
+        description: ["The platform allows users find the place to rent or upload the post.", "Can search places by maps, keyword and filters.", "Realtime chat using Firebase."],
         images: [{ url: oupia1 }, { url: oupia2 }],
         tags: [{ name: "React" }, { name: "TailwindCSS" }, { name: "Flowbite" }, { name: "Axios" }, { name: "SpringMVC" }, { name: "Firebase" }, { name: "SASS" }],
         link: "https://github.com/NganBao0206/Oupia"
@@ -34,7 +34,7 @@ export const myProjects: Project[] = [
         liveDemo: "https://infinithree.netlify.app/"
     }, {
         name: "Oupia - The Current Version",
-        description: ["The updated of the previous rent house platform which users can search by many methods such as searching by keywords, filter and map using Goongs Map.",
+        description: ["The updated of the previous rent house platform which users can search by many methods such as searching by keywords, filter and map using Goongs Map.", "Dark & Light Mode.",
             "By using TypeScript can slacable project and fixed bug.",
             "Update realtime chat that users can attach images and rent post if the user is landlord role."],
         images: [{ url: oupiaCur1 }, { url: oupiaCur2 }],

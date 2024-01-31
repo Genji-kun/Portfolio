@@ -90,7 +90,7 @@ const Profile = () => {
                         <a href="#projects" onClick={handleClick} className="w-full">
                             <Button className="p-4 xl:p-6 text-xs xl:text-base font-semibold w-full">View my projects</Button>
                         </a>
-                        <Button variant={"outline"} className="p-4 xl:p-6 text-xs xl:text-base font-semibold border-primary">My working experience</Button>
+                        <Button variant={"outline"} className=" p-4 xl:p-6 text-xs xl:text-base font-semibold border-primary">My working experience</Button>
                     </motion.div>
                 </div>
                 <div className="w-full md:w-1/2 flex justify-center items-center">
