@@ -16,7 +16,7 @@ export const myProjects: Project[] = [
             "When user complete booking room, the system will send automatic email which notices when users can receive room. ",
             "The website also has employee role which can export the ticket when customeres arrives the hotel."],
         images: [{ url: openUnited }],
-        tags: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }, { name: "Bootstrap" }, { name: "Python Flask" }, { name: "MySQL" }],
+        tags: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }, { name: "Python Flask" }, { name: "MySQL" }],
         link: "https://github.com/Genji-kun/OpenUnited"
     }, {
         name: "Oupia - The First Version",
@@ -28,7 +28,7 @@ export const myProjects: Project[] = [
         name: "Codification Law InfiniThree",
         description: ["The Viet Nam's law search documents website can help users to find the rules by topics.",
             "Trained bot chat can answer the basic question with large data."],
-        images: [{ url: law1 }, { url: law2 }],
+        images: [{ url: law2 }, { url: law1 }],
         tags: [{ name: "React" }, { name: "JavaScript" }, { name: "TailwindCSS" }, { name: "DaisyUI" }, { name: "Netlify" }, { name: "Axios" }, { name: "Python Flask" }],
         link: "https://github.com/NganBao0206/codification_law_infiniThree",
         liveDemo: "https://infinithree.netlify.app/"

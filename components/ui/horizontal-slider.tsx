@@ -16,7 +16,7 @@ const HorizontalSlider = () => {
     return (
         <section ref={targetRef} className="w-full h-[300vh] bg-primary">
             <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-                <motion.div style={{ x }} className="flex gap-4">
+                <motion.div style={{ x }} className="flex gap-0 xl:gap-4">
                     <AboutMeText />
                     <AboutMe />
                 </motion.div>

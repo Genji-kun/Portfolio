@@ -3,6 +3,7 @@
 import React from 'react';
 import { Sheet, SheetContent, SheetTrigger } from './sheet';
 import { Menu } from 'lucide-react';
+import Sidebar from './sidebar';
 
 const NavbarMenu = () => {
     return (
@@ -12,7 +13,7 @@ const NavbarMenu = () => {
                     <Menu size="20" />
                 </SheetTrigger>
                 <SheetContent side={"left"}>
-
+                    <Sidebar />
                 </SheetContent>
             </Sheet>
         </div>

@@ -67,7 +67,7 @@ const Profile = () => {
                 variants={sideInRightVariants}
                 initial="initial"
                 animate="animate"
-                className="uppercase font-bold absolute text-xl xl:text-8xl text-nowrap fill-none -z-10 top-[15%] -left-10 xl:left-32 " style={{ color: 'transparent', WebkitTextStroke: '1px rgba(228,228,231, 1)' }}>
+                className="uppercase font-bold absolute text-5xl xl:text-8xl text-nowrap fill-none -z-10 top-[10%] -left-10 xl:left-32" style={{ color: 'transparent', WebkitTextStroke: '1px rgba(228,228,231, 1)' }}>
                 Frontend Dev
             </motion.h4>
             <div className="h-[80vh] xl:h-[90vh] justify-center flex flex-col-reverse xl:flex-row items-center py-10 xl:container">
@@ -101,7 +101,7 @@ const Profile = () => {
                 variants={sideInLeftVariants}
                 initial="initial"
                 animate="animate"
-                className="uppercase font-bold absolute text-xl xl:text-8xl text-nowrap fill-none -z-20 bottom-[50%] xl:bottom-[15%] -right-10 xl:right-32" style={{ color: 'transparent', WebkitTextStroke: '1px rgba(228,228,231, 1)' }}>
+                className="uppercase font-bold absolute text-5xl xl:text-8xl text-nowrap fill-none -z-20 bottom-[55%] xl:bottom-[15%] -right-10 xl:right-32" style={{ color: 'transparent', WebkitTextStroke: '1px rgba(228,228,231, 1)' }}>
                 UI / UX design
             </motion.div>
             <MyStatus isFinding={true} />
