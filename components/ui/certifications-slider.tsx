@@ -2,10 +2,11 @@
 
 import { useScroll, useTransform, motion } from 'framer-motion';
 import React, { useRef } from 'react';
-import AboutMeText from './about-me-text';
+import CertificationsText from './certifications-text';
 import AboutMe from './about-me';
+import Certifications from './certifications';
 
-const HorizontalSlider = () => {
+const CertificationsSlider = () => {
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: targetRef,
@@ -17,12 +18,12 @@ const HorizontalSlider = () => {
         <section ref={targetRef} className="w-full h-[300vh] bg-primary">
             <div className="sticky top-0 flex h-screen items-center overflow-hidden">
                 <motion.div style={{ x }} className="flex gap-0 xl:gap-4">
-                    <AboutMeText />
-                    <AboutMe />
+                    <CertificationsText />
+                    <Certifications />
                 </motion.div>
             </div>
         </section >
     );
 };
 
-export default HorizontalSlider;
+export default CertificationsSlider;

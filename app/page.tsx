@@ -1,6 +1,7 @@
-import HorizontalRevserseSlider from "@/components/ui/horizontal-reverse-slider";
-import HorizontalSlider from "@/components/ui/horizontal-slider";
+import AboutMeSlider from "@/components/ui/about-me-slider";
+import CertificationsSlider from "@/components/ui/certifications-slider";
 import Profile from "@/components/ui/profile";
+import ProjectSlider from "@/components/ui/project-slider";
 import Projects from "@/components/ui/projects";
 
 const HomePage = () => {
@@ -16,8 +17,9 @@ const HomePage = () => {
         </svg>
       </div>
       <Profile />
-      <HorizontalSlider />
-      <HorizontalRevserseSlider />
+      <AboutMeSlider />
+      <CertificationsSlider />
+      <ProjectSlider />
       <Projects />
     </div>
   )

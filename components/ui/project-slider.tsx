@@ -1,17 +1,15 @@
 "use client"
 
 import { useScroll, useTransform, motion } from 'framer-motion';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import MyProjectsText from './my-projects-text';
 import ShapeDecoration from './shape-decoration';
-import Image from 'next/image';
 import { myProjects } from '@/data/projects';
 import ProjectItem from './project-item';
 
 
-const HorizontalRevserseSlider = () => {
+const ProjectSlider = () => {
 
-    const [expand, isExpand] = useState(false);
 
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -39,4 +37,4 @@ const HorizontalRevserseSlider = () => {
     );
 };
 
-export default HorizontalRevserseSlider;
+export default ProjectSlider;

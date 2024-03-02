@@ -5,4 +5,4 @@ import image4 from "@/public/about_me_4.jpg";
 import image5 from "@/public/about_me_5.jpg";
 
 
-export const aboutMeImages = [image1, image2, image3, image4, image5];
+export const images = [image1, image2, image3, image4, image5];

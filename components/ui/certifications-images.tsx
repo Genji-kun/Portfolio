@@ -4,10 +4,10 @@ import React from 'react';
 import Autoplay from "embla-carousel-autoplay"
 import { Carousel, CarouselContent, CarouselItem } from './carousel';
 import Image from 'next/image';
-import { images } from '@/data/aboutMeImages';
+import { images } from '@/data/certificationsImages';
 
 
-const AboutMeImages = () => {
+const CertificationsImages = () => {
 
     const plugin = React.useRef(
         Autoplay({ delay: 2000, stopOnInteraction: true })
@@ -22,8 +22,8 @@ const AboutMeImages = () => {
                 onMouseLeave={plugin.current.reset}>
                 <CarouselContent>
                     {images.map((image, index) => (
-                        <CarouselItem key={index} className="w-full">
-                            <Image src={image} alt="image" className="aspect-video w-full object-cover rounded-lg" />
+                        <CarouselItem key={index} className="w-full items-center flex">
+                            <Image src={image} alt="image" className="w-3/5 mx-auto object-cover rounded-lg" />
                         </CarouselItem>
                     ))}
                 </CarouselContent>
@@ -33,4 +33,4 @@ const AboutMeImages = () => {
     );
 };
 
-export default AboutMeImages;
+export default CertificationsImages;
